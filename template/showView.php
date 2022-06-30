@@ -9,17 +9,11 @@
     </style>
 </head>
 <body>
+    <h1><?=$animal['nom']?></h1>
+    <p>
+        Est un animal de type <?=$animal['espece']?> qui à un caractère de type
+        <?=$animal['caractere']?>.
+    </p>
 
-    <?php
-        foreach($animaux as $animal) {
-            ?>
-                <div class="animal">
-                    <h1><?=$animal['nom']?> ( <?=$animal['espece']?>) </h1>
-                    <a href="showController.php?id=<?=$animal['id']?>">voir le détail</a>
-                </div>
-            <?php
-        }
-
-    ?>
 </body>
 </html>
